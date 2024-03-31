@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://pw1i07ej26rc"
-path="res://.godot/imported/loops.jpg-e71f58291ffa28fd8ec009740f7c5b15.ctex"
+uid="uid://cen0awsyckyon"
+path="res://.godot/imported/loops.jpg-723708ccb3f9f1c48827927cbe80859f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://loops.jpg"
-dest_files=["res://.godot/imported/loops.jpg-e71f58291ffa28fd8ec009740f7c5b15.ctex"]
+source_file="res://git-media/loops.jpg"
+dest_files=["res://.godot/imported/loops.jpg-723708ccb3f9f1c48827927cbe80859f.ctex"]
 
 [params]
 
