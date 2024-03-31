@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpqwfebx4c7rr"]
+
+[ext_resource type="Script" path="res://Loops/SpawnManager.gd" id="1_b7pxq"]
+[ext_resource type="PackedScene" uid="uid://djikatmvi5s5f" path="res://Loops/star.tscn" id="2_bj6bo"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="SpawnManager" type="Node" parent="."]
+script = ExtResource("1_b7pxq")
+
+[node name="Star" parent="." instance=ExtResource("2_bj6bo")]

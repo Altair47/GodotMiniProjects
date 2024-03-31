@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2e1ywhfh3dm5"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_gqqtd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b6tte"]
+albedo_color = Color(0.894118, 0.431373, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qv84b"]
+albedo_color = Color(0.407843, 0.717647, 0, 1)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_016wf"]
+height = 2.66999
+
+[node name="Tree" type="StaticBody3D" groups=["Tree"]]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1.27037, 0, 0, 0, 1, 0, 0.918468, 0)
+mesh = SubResource("CapsuleMesh_gqqtd")
+surface_material_override/0 = SubResource("StandardMaterial3D_b6tte")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.36945, 0, 0, 0, 0.730597, 0, 0, 0, 1.45622, 0, 2.40569, 0)
+mesh = SubResource("CapsuleMesh_gqqtd")
+surface_material_override/0 = SubResource("StandardMaterial3D_qv84b")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.871119, 0, 0, 0, 0.730597, 0, 0, 0, 0.926316, 0, 3.21511, 0)
+mesh = SubResource("CapsuleMesh_gqqtd")
+surface_material_override/0 = SubResource("StandardMaterial3D_qv84b")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.480849, 0, 0, 0, 0.733241, 0, 0, 0, 0.511317, 0, 3.72464, 0)
+mesh = SubResource("CapsuleMesh_gqqtd")
+surface_material_override/0 = SubResource("StandardMaterial3D_qv84b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.00018, 0)
+shape = SubResource("CapsuleShape3D_016wf")

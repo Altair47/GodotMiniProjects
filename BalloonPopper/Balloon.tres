@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b7dtrxseaxyjw"]
+
+[ext_resource type="Texture2D" uid="uid://dm2aykfmtsy0a" path="res://BalloonPopper/358472948_1015953897621231769_2344418364728354755_n.jpg" id="1_377if"]
+
+[resource]
+albedo_color = Color(0.74902, 0.0470588, 0.227451, 1)
+roughness = 0.13
+rim_enabled = true
+detail_enabled = true
+detail_mask = ExtResource("1_377if")
+uv1_scale = Vector3(5, 3, 4)

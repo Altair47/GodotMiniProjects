@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://cof1li7bjcwah"]
+
+[ext_resource type="PackedScene" uid="uid://dxaegwi4ysodh" path="res://BalloonPopper/Balloon.tscn" id="1_a6qt6"]
+[ext_resource type="Script" path="res://BalloonPopper/BalloonManager.gd" id="3_88ron"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6j0ko"]
+font_size = 30
+font_color = Color(0.32549, 1, 0.32549, 1)
+
+[node name="Main" type="Node3D"]
+
+[node name="Balloon" parent="." instance=ExtResource("1_a6qt6")]
+transform = Transform3D(0.999974, -0.00703138, 0.00160412, 0.00703288, 0.999975, -0.000931786, -0.00159752, 0.000943047, 0.999998, 0.0581939, 0.0781636, -0.181992)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.68473)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.435765, 0.56951, -0.69697, 1.80271e-08, 0.77436, 0.632746, 0.90006, -0.275729, 0.337439, -0.950348, 2.16019, 3.54687)
+
+[node name="BalloonManager" type="Node" parent="." node_paths=PackedStringArray("score_text")]
+script = ExtResource("3_88ron")
+score_text = NodePath("../ScoreText")
+
+[node name="Balloon2" parent="." instance=ExtResource("1_a6qt6")]
+transform = Transform3D(0.999999, -0.000972955, -0.000474868, 0.000973645, 0.999999, 0.00146921, 0.000473431, -0.00146968, 0.999999, 1.53171, 0, -0.0576725)
+
+[node name="Balloon3" parent="." instance=ExtResource("1_a6qt6")]
+transform = Transform3D(0.999999, -0.000972955, -0.000474868, 0.000973645, 0.999999, 0.00146921, 0.000473431, -0.00146968, 0.999999, -2.0025, 0, 0.0473678)
+
+[node name="Balloon4" parent="." instance=ExtResource("1_a6qt6")]
+transform = Transform3D(0.999999, -0.000972955, -0.000474868, 0.000973645, 0.999999, 0.00146921, 0.000473431, -0.00146968, 0.999999, 0.756374, 1.47065, -0.417712)
+
+[node name="ScoreText" type="Label" parent="."]
+offset_left = 82.0
+offset_top = 68.0
+offset_right = 354.0
+offset_bottom = 128.0
+text = "Score: "
+label_settings = SubResource("LabelSettings_6j0ko")
